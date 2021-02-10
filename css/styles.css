@@ -26,8 +26,8 @@ body {
 
 img,
 svg {
-  vertical-align: middle;
   max-width: 100%;
+  vertical-align: middle;
 }
 
 .btn {
@@ -47,9 +47,9 @@ svg {
 .main-nav ul {
   display: grid;
   gap: 1.25rem;
-  padding: 0;
-  list-style: none;
   grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  padding: 0;
 }
 
 .main-nav a {
@@ -67,4 +67,70 @@ svg {
 .main-nav a:hover {
   background: var(--dark);
   color: var(--light);
+}
+
+/* Top Container */
+.showcase-container {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+
+.showcase {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/pic2.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  grid-area: showcase;
+  min-height: 25rem;
+  padding: 3rem;
+}
+
+.showcase h1 {
+  color: var(--light);
+  font-size: clamp(2rem, 4vw, 4rem);
+  margin-bottom: 0;
+}
+
+.showcase p {
+  color: var(--light);
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  margin-top: 0;
+}
+
+.showcase .btn {
+  margin-top: 1.25rem;
+}
+
+.top-box {
+  background: var(--primary);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.top-box h4,
+.top-box .price,
+.top-box .btn {
+  margin: 0.625rem 0;
+}
+
+.top-box .price {
+  font-size: 2.5rem;
+}
+
+.top-box-a {
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
 }
