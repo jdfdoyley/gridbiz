@@ -117,14 +117,9 @@ svg {
   padding: 1.5rem;
 }
 
-.top-box h4,
-.top-box .price,
-.top-box .btn {
-  margin: 0.625rem 0;
-}
-
 .top-box .price {
   font-size: 2.5rem;
+  margin: 1.5rem 0;
 }
 
 .top-box-a {
@@ -133,4 +128,22 @@ svg {
 
 .top-box-b {
   grid-area: top-box-b;
+}
+
+/* Boxes */
+.boxes {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+}
+
+.box {
+  background: var(--primary);
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.box h3 {
+  padding: 1rem 0;
 }
