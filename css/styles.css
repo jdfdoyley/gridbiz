@@ -166,3 +166,24 @@ svg {
 .info p {
   margin-bottom: 1.5rem;
 }
+
+/* Portfolio */
+.portfolio {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+}
+
+.portfolio img {
+  box-shadow: var(--shadow);
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  background: var(--dark);
+  color: var(--light);
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
